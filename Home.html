@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/maine.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.css.map" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+
+    <style>
+      .topUsers {
+        padding-top: 0;
+      }
+      .topUsers .user {
+        margin: 20px auto;
+        padding: 0;
+        -webkit-box-shadow: 0px 0px 10px 0px #424141;
+        box-shadow: 0px 0px 10px 0px #424141;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+      }
+
+      .topUsers .user .card-header {
+        width: 90px;
+        height: 90px;
+        padding: 0;
+        position: absolute;
+        right: -20px;
+        top: -30px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 10px 5px #302f2f;
+        box-shadow: 0px 0px 10px 5px #302f2f;
+        background: inherit;
+      }
+
+      .topUsers .user .card-header img {
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        -webkit-border-radius: inherit;
+        -moz-border-radius: inherit;
+        -ms-border-radius: inherit;
+        -o-border-radius: inherit;
+      }
+      .topUsers .user .card-footer {
+        position: relative;
+        overflow: hidden;
+      }
+      .topUsers .user .card-footer .number {
+        margin: 0 6px;
+        color: #fbff00;
+      }
+      .topUsers .user .card-footer .rank {
+        display: inline-block;
+        /* background-color: gold; */
+        width: 100px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em;
+      }
+      .topUsers .user .card-footer .rank::before {
+        content: "";
+        width: 110%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: -15px;
+        background-color: #0d8bd4;
+        z-index: -1;
+        transform: skewX(-40deg);
+      }
+      .topUsers .user .card-footer .rank::after {
+        content: "";
+        width: 20%;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        left: -50%;
+        background-color: #0d8bd4;
+        z-index: -1;
+        transform: skewX(-40deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- start-nav navbar--->
+    <nav class="navbar navbar-light bg-gred">
+      <div class="container-fluid container">
+        <div class="toggler btn">
+          <i class="bi bi-list h2 show-menu"></i>
+          <i class="bi bi-x-lg h2 heden-menu"></i>
+        </div>
+        <div>
+          <!-- this button for change longuge -->
+
+          <!-- <div class="btn-group">
+            <button data-toggle="dropdown" class="btn h4 dropdown-toggle btn-secondary">
+              <i class="bi bi-translate m-2"></i> ENGLISH
+            </button>
+            <div class="dropdown-menu p-0">
+              <button class="dropdown-item p-2">ENGLISH</button>
+              <button class="dropdown-item border-top p-2">FRANCAIS</button>
+              <button class="dropdown-item border-top p-2">العربية</button>
+            </div>
+          </div> -->
+
+          <a href="./SignUpM9wd-1.html" class="btn btn-primary fw-bold h4"
+            >SIGN UP</a
+          >
+
+          <a href="./LoginM9owd.html" class="btn btn-light fw-bold h4"
+            >LOGOUT</a
+          >
+        </div>
+      </div>
+
+      <div class="menu bg-gred">
+        <div class="user">
+          <img src="./imges/logo.jpg" alt="" />
+          <span class="userName h5"> userName</span>
+          <span class="logged text-success"> Logged In</span>
+        </div>
+        <ul>
+          <li>
+            <a href="Home.html" class="link-mune active">
+              <i class="bi bi-house-door h2"></i>
+              <span class="h4">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="Victims.html" class="link-mune">
+              <i class="bi bi-person-lines-fill h2"></i>
+              <span class="h4">Victims </span>
+            </a>
+          </li>
+          <li>
+            <a href="/Scamas.html" class="link-mune">
+              <i class="bi bi-receipt h2"></i> <span class="h4">Scamas </span>
+            </a>
+          </li>
+          <li>
+            <a href="/PrivateScamas.html" class="link-mune">
+              <i class="bi bi-back h2"></i>
+              <span class="h4">Private Scamas </span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html" class="link-mune">
+              <i class="bi bi-gear-fill h2"></i>
+              <span class="h4">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/Black-Scam-103887988825308/" target="blank" class="link-mune">
+              <i class="bi bi-facebook h2"></i>
+              <span class="h4">Contact </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end-nav -->
+
+    <div class="topUsers container" id="topUsers">
+      <h2 class="title bg-gred">Top Users</h2>
+      <div class="content row text-light">
+        <div class="user user-1 card bg-gred col-10 col-md-8">
+          <div class="card-header">
+            <img src="./imges/3602183.png" alt="img" />
+          </div>
+
+          <div class="card-body">
+            <h3 class="Name">name-user</h3>
+            <div class="stars">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+            </div>
+          </div>
+          <div class="card-footer">
+            Has <span class="number">378</span>
+            victims in 24 H
+            <span class="rank">1</span>
+          </div>
+        </div>
+        <div class="user user-2 card bg-gred col-10 col-md-5">
+          <div class="card-header">
+            <img src="./imges/3602183.png" alt="img" />
+          </div>
+
+          <div class="card-body">
+            <h3 class="Name">name-user</h3>
+            <div class="stars">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-half text-warning"></i>
+              <i class="bi bi-star text-warning"></i>
+            </div>
+          </div>
+          <div class="card-footer">
+            Has <span class="number">214</span> victims in 24 H
+            <span class="rank">2</span>
+          </div>
+        </div>
+        <div class="user user-3 card bg-gred col-10 col-md-5">
+          <div class="card-header">
+            <img src="./imges/3602183.png" alt="img" />
+          </div>
+
+          <div class="card-body">
+            <h3 class="Name">name-user</h3>
+            <div class="stars">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-half text-warning"></i>
+              <i class="bi bi-star text-warning"></i>
+              <i class="bi bi-star text-warning"></i>
+            </div>
+          </div>
+          <div class="card-footer">
+            Has <span class="number">139</span> victims in 24 H
+            <span class="rank">3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-page"></div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.js.map"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

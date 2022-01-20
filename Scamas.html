@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scams</title>
+    <link rel="stylesheet" href="./css/maine.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.css.map" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <style>
+      #scams .scam {
+        margin: 20px auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+      }
+
+      #scams .scam::before {
+        content: "";
+        width: 85%;
+        height: 100%;
+        background-image: linear-gradient(50deg, #5f5f5f, #238bc7, #464444);
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        border-radius: inherit;
+        -webkit-border-radius: inherit;
+        -moz-border-radius: inherit;
+        -ms-border-radius: inherit;
+        -o-border-radius: inherit;
+      }
+
+      #scams .scam::after {
+        content: "";
+        width: 85%;
+        height: 100%;
+        background-color: #3e6b8fcb;
+        position: absolute;
+        right: -100%;
+        top: 0;
+        opacity: 0.3;
+        z-index: 1;
+        border-radius: inherit;
+        -webkit-border-radius: inherit;
+        -moz-border-radius: inherit;
+        -ms-border-radius: inherit;
+        -o-border-radius: inherit;
+        transition: 0.7s ease;
+        -webkit-transition: 0.7s ease;
+        -moz-transition: 0.7s ease;
+        -ms-transition: 0.7s ease;
+        -o-transition: 0.7s ease;
+      }
+
+      #scams .scam:hover::after {
+        right: 0;
+      }
+
+      #scams .scam:hover img {
+        filter: grayscale(90%);
+        -webkit-filter: grayscale(90%);
+      }
+
+      #scams .scam:hover h4 {
+        color: #27e3fc;
+      }
+
+      #scams .scam img {
+        width: 85%;
+        margin-top: 15%;
+        border-radius: inherit;
+        -webkit-border-radius: inherit;
+        -moz-border-radius: inherit;
+        -ms-border-radius: inherit;
+        -o-border-radius: inherit;
+        transition: 0.7s ease;
+        -webkit-transition: 0.7s ease;
+        -moz-transition: 0.7s ease;
+        -ms-transition: 0.7s ease;
+        -o-transition: 0.7s ease;
+      }
+
+      #scams .scam a {
+        margin: 15px auto;
+        z-index: 3;
+        color: #06f81a;
+        font-weight: 600;
+        -webkit-box-shadow: 0px 0px 10px 0px black;
+        box-shadow: 0px 0px 10px 0px black;
+      }
+
+      #scams .scam a:hover {
+        background-color: #4d78ee;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+      }
+
+      #scams .scam h4 {
+        width: 100%;
+        margin: 10px 10px 0 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- start-nav navbar--->
+    <nav class="navbar navbar-light bg-gred">
+      <div class="container-fluid container">
+        <div class="toggler btn">
+          <i class="bi bi-list h2 show-menu"></i>
+          <i class="bi bi-x-lg h2 heden-menu"></i>
+        </div>
+        <div>
+          <a href="./SignUpM9wd-1.html" class="btn btn-primary fw-bold h4"
+            >SIGN UP</a
+          >
+
+          <a href="./LoginM9owd.html" class="btn btn-light fw-bold h4"
+            >LOGOUT</a
+          >
+        </div>
+      </div>
+
+      <div class="menu bg-gred">
+        <div class="user">
+          <img src="./imges/logo.jpg" alt="" />
+          <span class="userName h5"> userName</span>
+          <span class="logged text-success"> Logged In</span>
+        </div>
+        <ul>
+          <li>
+            <a href="Home.html" class="link-mune">
+              <i class="bi bi-house-door h2"></i>
+              <span class="h4">Home </span>
+            </a>
+          </li>
+          <li>
+            <a href="Victims.html" class="link-mune">
+              <i class="bi bi-person-lines-fill h2"></i>
+              <span class="h4">Victims </span>
+            </a>
+          </li>
+          <li>
+            <a href="/Scamas.html" class="link-mune active">
+              <i class="bi bi-receipt h2"></i> <span class="h4">Scamas </span>
+            </a>
+          </li>
+          <li>
+            <a href="/PrivateScamas.html" class="link-mune">
+              <i class="bi bi-back h2"></i>
+              <span class="h4">Private Scamas </span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html" class="link-mune">
+              <i class="bi bi-gear-fill h2"></i>
+              <span class="h4">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/Black-Scam-103887988825308/" target="blank" class="link-mune">
+              <i class="bi bi-facebook h2"></i>
+              <span class="h4">Contact </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end-nav -->
+
+    <!-- start-content-page -->
+    <div class="container" id="scams">
+      <h2 class="title bg-gred">scams</h2>
+
+      <div class="content row">
+        <div class="scam col-9 col-sm-6 col-md-4 col-lg-3">
+          <img src="./imges/download.jpg" alt="" />
+          <h4 class="h4">Simple Short Description</h4>
+          <a href="" class="btn"> Go To Page</a>
+        </div>
+        <div class="scam col-9 col-sm-6 col-md-4 col-lg-3">
+          <img src="./imges/download.jpg" alt="" />
+          <h4 class="h4">Simple Short Description</h4>
+          <a href="" class="btn"> Go To Page</a>
+        </div>
+        <div class="scam col-9 col-sm-6 col-md-4 col-lg-3">
+          <img src="./imges/download.jpg" alt="" />
+          <h4 class="h4">Simple Short Description</h4>
+          <a href="" class="btn"> Go To Page</a>
+        </div>
+        <div class="scam col-9 col-sm-6 col-md-4 col-lg-3">
+          <img src="./imges/download.jpg" alt="" />
+          <h4 class="h4">Simple Short Description</h4>
+          <a href="" class="btn"> Go To Page</a>
+        </div>
+        <div class="scam col-9 col-sm-6 col-md-4 col-lg-3">
+          <img src="./imges/download.jpg" alt="" />
+          <h4 class="h4">Simple Short Description</h4>
+          <a href="" class="btn"> Go To Page</a>
+        </div>
+        <div class="scam col-9 col-sm-6 col-md-4 col-lg-3">
+          <img src="./imges/download.jpg" alt="" />
+          <h4 class="h4">Simple Short Description</h4>
+          <a href="" class="btn"> Go To Page</a>
+        </div>
+        <div class="scam col-9 col-sm-6 col-md-4 col-lg-3">
+          <img src="./imges/download.jpg" alt="" />
+          <h4 class="h4">Simple Short Description</h4>
+          <a href="" class="btn"> Go To Page</a>
+        </div>
+        <div class="scam col-9 col-sm-6 col-md-4 col-lg-3">
+          <img src="./imges/download.jpg" alt="" />
+          <h4 class="h4">Simple Short Description</h4>
+          <a href="" class="btn"> Go To Page</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- end-content-page -->
+
+    <div class="bg-page"></div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.js.map"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

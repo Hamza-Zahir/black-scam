@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>settings</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/maine.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.css.map" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <style>
+      #formContent .content {
+        background-color: rgba(247, 243, 238, 0.342);
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 20px 0px #2c2b2b;
+        box-shadow: 0px 0px 20px 0px #2c2b2b;
+        position: relative;
+        overflow: hidden;
+        height: 400px;
+      }
+
+      #formContent .content .btn-chengs {
+        display: flex;
+        justify-content: space-around;
+      }
+      #formContent .content .btn-chengs .btn {
+        width: 40%;
+      }
+      #formContent .content .dnone {
+        /* display: none; */
+      }
+
+      #formContent .content form {
+        padding: 0;
+        position: absolute;
+        top: 100px;
+        transition: 0.5s ease;
+        width: 90%;
+      }
+
+      #formContent .content .change-password {
+        left: -100%;
+      }
+      #formContent .content .change-email {
+        right: 5%;
+      }
+
+      #formContent .content form .input {
+        width: 100%;
+        font-size: 1.3em;
+        padding: 5px;
+        background-color: #caf5ec;
+        border: none;
+        outline: none;
+        border-bottom: 3px solid #0589aa;
+        margin: 15px auto;
+        color: black;
+      }
+
+      #formContent .content form .submit {
+        width: 70%;
+        padding: 5px;
+        color: blanchedalmond;
+        background-color: #1c87b8;
+        outline: none;
+        border: none;
+        font-size: 1.5em;
+        font-weight: 500;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        -webkit-box-shadow: 5px 5px 10px 0px #535151;
+        box-shadow: 5px 5px 10px 0px #535151;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- start-nav navbar--->
+    <nav class="navbar navbar-light bg-gred">
+      <div class="container-fluid container">
+        <div class="toggler btn">
+          <i class="bi bi-list h2 show-menu"></i>
+          <i class="bi bi-x-lg h2 heden-menu"></i>
+        </div>
+        <div>
+          <a href="./SignUpM9wd-1.html" class="btn btn-primary fw-bold h4"
+            >SIGN UP</a
+          >
+
+          <a href="./LoginM9owd.html" class="btn btn-light fw-bold h4"
+            >LOGOUT</a
+          >
+        </div>
+      </div>
+
+      <div class="menu bg-gred">
+        <div class="user">
+          <img src="./imges/logo.jpg" alt="" />
+          <span class="userName h5"> userName</span>
+          <span class="logged text-success"> Logged In</span>
+        </div>
+        <ul>
+          <li>
+            <a href="Home.html" class="link-mune">
+              <i class="bi bi-house-door h2"></i>
+              <span class="h4">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="Victims.html" class="link-mune">
+              <i class="bi bi-person-lines-fill h2"></i>
+              <span class="h4">Victims </span>
+            </a>
+          </li>
+          <li>
+            <a href="/Scamas.html" class="link-mune">
+              <i class="bi bi-receipt h2"></i> <span class="h4">Scamas </span>
+            </a>
+          </li>
+          <li>
+            <a href="/PrivateScamas.html" class="link-mune">
+              <i class="bi bi-back h2"></i>
+              <span class="h4">Private Scamas </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="settings.html" class="link-mune active">
+              <i class="bi bi-gear-fill h2"></i>
+              <span class="h4">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/Black-Scam-103887988825308/" target="blank" class="link-mune">
+              <i class="bi bi-facebook h2"></i>
+              <span class="h4">Contact </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end-nav -->
+
+    <div class="container">
+      <div id="formContent" class="row text-center">
+        <div class="content col-11 col-md-8 col-lg-6">
+          <div class="btn-chengs">
+            <div class="text-light btn btn-success" onclick="showPassword()">
+              CHANGE PASSWORD
+            </div>
+            <div class="text-light btn btn-primary" onclick="showEmail()">
+              CHANGE EMAIL
+            </div>
+          </div>
+
+          <form action="" class="change-email">
+            <input
+              type="email"
+              id="new-email"
+              class="input new-email pl-3"
+              name="new-emai"
+              placeholder="New Email"
+            />
+            <input
+              type="password"
+              id="password"
+              class="input pl-3"
+              type="password"
+              name="password"
+              placeholder="password"
+            />
+            <input
+              type="submit"
+              class="fadeIn fourth submit"
+              value="CHANGE EMAIL"
+            />
+          </form>
+
+          <form action="" class="change-password dnone">
+            <input
+              type="password"
+              id="old-password"
+              class="input old-password pl-3"
+              name="old-password"
+              placeholder="Old Password"
+            />
+            <input
+              type="password"
+              id="password"
+              class="input pl-3"
+              name="new-password"
+              placeholder="New Password"
+            />
+            <input
+              type="submit"
+              class="fadeIn fourth submit"
+              value="CHANGE PASSWORD"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- bg-pges -->
+    <div class="bg-page"></div>
+
+    <script>
+      let formsEmail = document.querySelector(".change-email");
+      let formsPassword = document.querySelector(".change-password");
+      // let inputLink = document.querySelector(".img-link");
+      // let inputLink = document.querySelector(".img-link");
+
+      let showEmail = function () {
+        formsPassword.style.cssText = `left:-100%`;
+        formsEmail.style.cssText = `right: 5%;`;
+
+        // formsPassword.classList.add("dnone");
+        // formsEmail.classList.remove("dnone");
+      };
+
+      let showPassword = function () {
+        formsPassword.style.cssText = `left:5%`;
+        formsEmail.style.cssText = `right: -100%;`;
+      };
+    </script>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.js.map"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
